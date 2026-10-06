@@ -1,1 +1,22 @@
 
+name: pipeline1
+
+on:
+    push: 
+        branches: 
+            - main
+
+    
+
+
+jobs: 
+    run-python-code: 
+        runs-on: ubuntu-latest
+
+
+        steps:
+            - name: checkout code
+              uses: action/checkout@v7
+
+            - name: run python programm
+              run: python welcome.py
