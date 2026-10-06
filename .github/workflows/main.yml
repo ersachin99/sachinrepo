@@ -19,4 +19,4 @@ jobs:
               uses: actions/checkout@v7
 
             - name: run python programm
-              run: python welcome.py
+              run: python welcome1.py
